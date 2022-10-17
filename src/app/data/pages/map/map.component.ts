@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 
 interface Property {
-  title: string;
-  desc: string;
-  lngLat: [number, number];
+  id: string;
+  nombre: string;
+  indicePobreza: number;
+  mayor65: number;
+  soledad65: number;
+  lat: number;
+  lon: number;
 }
 
 @Component({
@@ -23,16 +27,26 @@ export class MapComponent {
   constructor() { }
   
 
+//   {
+//     "id": "B-01",
+//     "nombre": "el Raval",
+//     "indicePobreza": 56.64,
+//     "mayor65": 31.9,
+//     "soledad65": 11.3,
+//     "lat": 41.378616670551004,
+//     "lon": 2.17027931537028,
+//     "coordParser": null
+// }
+
   infoLocation: Property[] = [
     {
-      title: 'Casa residencial, Canadá',
-      desc: 'Bella propiedad en Katana, Canadá',
-      lngLat: [ -75.92722289474008, 45.280015511264466]
-    },
-    {
-      title: 'Casa de playa, México',
-      desc: 'Hermosa casa de playa en Acapulco, México',
-      lngLat: [ -99.91287720907991, 16.828940930185748]
+      id: "B-01",
+      nombre: "el Raval",
+      indicePobreza: 56.64,
+      mayor65: 31.9,
+      soledad65: 11.3,
+      lat: 41.378616670551004,
+      lon: 2.17027931537028
     }
   ]
 
