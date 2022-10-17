@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
     bottom:0px;
     right:0px;
     padding:30px;
+    z-index:2000;
   }
 
   svg{

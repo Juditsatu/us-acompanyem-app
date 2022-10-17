@@ -5,8 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './logout.component.html',
   styles: [` 
   svg{
-    font-size:2rem;
-    width:50px;
+
+    width:30px;
   }
 
   .btn-logout{
@@ -16,6 +16,7 @@ import { Component, OnInit } from '@angular/core';
     background-color:white;
     padding:15px;
     border-radius:50px;
+    z-index:2000
 
 
 
