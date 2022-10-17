@@ -1,1 +1,46 @@
-<p>register works!</p>
+<div class="wrapper">
+    <div class="title-text">
+      <div class="title login">Signup Form</div>
+      <div class="title login">Signup Form</div>
+    </div>
+
+    <!-- Start Form Container -->
+    <div class="form-container">
+
+      <div class="form-inner">
+
+        <!-- Start Signup Form -->
+        <form action="#" class="signup"
+              [formGroup]="registerForm"
+              (ngSubmit)="register()">
+
+          <div class="field">
+            <input type="text" 
+                    placeholder="Nom"
+                    formControlName="name" 
+                    required>
+          </div>
+          <div class="field">
+            <input type="email" 
+                    placeholder="Adreça de correu"
+                    formControlName="email" 
+                    required>
+          </div>
+          <div class="field">
+            <input type="password" 
+                    placeholder="Contrasenya"
+                    formControlName="password" 
+                    required>
+          </div>
+
+          <div class="field">
+            <input type="submit" value="Signup">
+          </div>
+          <div class="signup-link">
+            Ja teniu compte? <br><a routerLink="/auth/login">Inicia la sessió</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>

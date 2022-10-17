@@ -1,1 +1,42 @@
-<p>login works!</p>
+<div class="wrapper">
+    <div class="title-text">
+      <div class="title login">Iniciar sessió</div>
+      <div class="title signup">Signup Form</div>
+    </div>
+
+    <!-- Start Form Container -->
+    <div class="form-container">
+
+      <div class="form-inner">
+
+        <!-- Start Login Form -->
+        <form action="#" class="login"
+              [formGroup]="loginForm"
+              (ngSubmit)="login()">
+          <div class="field">
+            <input type="email" 
+                    placeholder="Adreça de correu"
+                    formControlName="email" 
+                    required>
+          </div>
+          <div class="field">
+            <input type="password" 
+                    placeholder="Contrasenya"
+                    formControlName="password" 
+                    required>
+          </div>
+          <div class="pass-link">
+            <a href="#">
+                Heu oblidat la contrasenya?
+            </a>
+          </div>
+          <div class="field">
+            <input type="submit" value="Inicia la sessió">
+          </div>
+          <div class="signup-link">
+            No teniu un compte? <br><a routerLink="/auth/register">Crea un compte d'usuari nou</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
