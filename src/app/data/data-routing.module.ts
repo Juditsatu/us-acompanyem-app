@@ -11,7 +11,7 @@ const routes: Routes = [
       { path:'home', component: HomeComponent},
       { path:'chart', component: ChartsComponent },
       { path:'map', component:MapComponent },
-      { path:'**', redirectTo:'home '},
+      { path:'**', redirectTo:'home'},
     ]
   }
 ];

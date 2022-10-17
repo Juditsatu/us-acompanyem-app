@@ -33,11 +33,13 @@ export class RegisterComponent implements OnInit {
         console.log(valid)
 
         if (valid === true) {
-          this.router.navigateByUrl('/data/home');
+          // this.router.navigateByUrl('/data/home');
         } else {
           // Swal.fire('Error', valid, 'error');
         }
       })
+      this.router.navigateByUrl('/data/home');
+
     
   }
 
