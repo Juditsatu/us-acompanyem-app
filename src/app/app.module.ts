@@ -11,6 +11,10 @@ import { MenuComponent } from './shared/menu/menu.component';
     AppComponent,
     MenuComponent
   ],
+  exports:[
+    MenuComponent
+
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
