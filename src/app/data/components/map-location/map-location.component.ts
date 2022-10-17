@@ -8,7 +8,7 @@ import * as mapboxgl from 'mapbox-gl';
     `
     div {
       width: 100%;
-      height: 450px;
+      height: 100vh;
       margin: 0px;
     }
     `
@@ -16,7 +16,6 @@ import * as mapboxgl from 'mapbox-gl';
 })
 export class MapLocationComponent implements AfterViewInit {
 
-  // @Input() lngLat: [number] = [0,0];
   @Input() lon: number = 0;
   @Input() lat: number = 0;
   @ViewChild('map') divMap!: ElementRef;
@@ -32,9 +31,15 @@ export class MapLocationComponent implements AfterViewInit {
       interactive: false
     });
 
-    new mapboxgl.Marker()
+    new mapboxgl.Marker({
+      'color': '#FF0000'
+    })
       .setLngLat([this.lon, this.lat])
       .addTo(map)
+  }
+
+  addColor() {
+    const color = "#FF0000";
   }
 
 }

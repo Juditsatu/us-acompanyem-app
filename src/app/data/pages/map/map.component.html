@@ -1,12 +1,13 @@
 <div class="row">
-    <div class="col-6" *ngFor="let estate of infoLocation">
+    <div class="col-12" *ngFor="let barri of infoLocation">
 
         <div class="card">
-            <app-map-location [lon]="estate.lon" [lat]="estate.lat" class="card-img-top"></app-map-location>
             <div class="card-body">
-                <h5 class="card-title"> {{ estate.nombre }} </h5>
-                <p class="card-text"> Indice pobreza {{ estate.indicePobreza }} </p>
-            </div>
+                <h5 class="card-title">Barri: {{ barri.nombre }}</h5>
+                <p class="card-text">Index pobresa: {{ barri.indicePobreza }}</p>
+              </div>
+            <app-map-location [lon]="barri.lon" [lat]="barri.lat" class="card-img-top"></app-map-location>
+
         </div>
 
     </div>
