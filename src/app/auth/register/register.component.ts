@@ -25,7 +25,20 @@ export class RegisterComponent implements OnInit {
   ) { }
 
   register() {
-    this.router.navigateByUrl('/data/home');
+    const { name, email, password } = this.registerForm.value;
+    
+    this.authService.register(name, email, password)
+      .subscribe( valid => {
+
+        console.log(valid)
+
+        if (valid === true) {
+          this.router.navigateByUrl('/data/home');
+        } else {
+          // Swal.fire('Error', valid, 'error');
+        }
+      })
+    
   }
 
   ngOnInit(): void {

@@ -27,7 +27,19 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    this.router.navigateByUrl('/data/home');
+    const { email, password } = this.loginForm.value;
+
+    this.authService.login(email, password)
+      .subscribe( valid => {
+
+        console.log(valid)
+
+        if (this.loginForm.value && valid === true) {
+          this.router.navigateByUrl('/data/home');
+        } else {
+          // Swal.fire('Error', valid, 'error');
+        }
+      })
   }
 
 }
