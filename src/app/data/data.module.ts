@@ -8,6 +8,8 @@ import { MapComponent } from './pages/map/map.component';
 import { ChartsComponent } from './pages/charts/charts.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MapLocationComponent } from './components/map-location/map-location.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { BtnGraficasComponent } from './components/btn-graficas/btn-graficas.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { MapLocationComponent } from './components/map-location/map-location.com
     MapComponent,
     ChartsComponent,
     HomeComponent,
-    MapLocationComponent
+    MapLocationComponent,
+    LogoutComponent,
+    BtnGraficasComponent
   ],
   imports: [
     CommonModule,
