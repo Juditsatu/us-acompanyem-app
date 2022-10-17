@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BarriService } from '../../services/barri.service';
 
 @Component({
   selector: 'app-home',
@@ -45,9 +46,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+
+  arrayPobreza:any;
+
+
+
+  
+
+  constructor( private barriService:BarriService) { }
 
   ngOnInit(): void {
+    
+  }
+
+  rango(rango:number){
+
+    const barris =   this.barriService.barris;
+
+    barris.forEach(barri => {
+      if(barri.indicePobreza < rango){
+        this.arrayPobreza = barri.indicePobreza;
+        console.log(this.arrayPobreza);
+  
+      }
+    })
+
   }
 
 }

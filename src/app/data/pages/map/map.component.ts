@@ -8,7 +8,7 @@ import { Property } from '../../interface/barri.interface';
     `
     #map {
       height: 100%;
-      width: 100%;
+      width: auto;
     }
     `
   ]

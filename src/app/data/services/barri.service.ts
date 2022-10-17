@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class BarriService {
 
+
+
   constructor() { }
 
   barris = [
@@ -279,4 +281,8 @@ export class BarriService {
         "coordParser": null
     }
 ]
+
+
+
+
 }
