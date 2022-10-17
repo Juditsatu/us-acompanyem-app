@@ -26,7 +26,7 @@ a:link, a:visited, a:active {
   height: 100%;
   place-items: center;
   background: #f2f2f2;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(left, #b26b45, #d54c22);
 }
 
 .wrapper {
@@ -94,7 +94,7 @@ a:link, a:visited, a:active {
   left: 0;
   border-radius: 5px;
   z-index: 0;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(left, #b26b45, #d54c22);
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 input[type="radio"] {
@@ -142,7 +142,7 @@ input[type="radio"] {
 }
 
 .form-inner form .field input:focus {
-  border-color: #fc83bb;
+  border-color: #f3a365;
 }
 
 .form-inner form .pass-link {
@@ -151,7 +151,7 @@ input[type="radio"] {
 
 .form-inner form .pass-link a,
 .form-inner form .signup-link a {
-  color: #fa4299;
+  color: #e34e44;
   text-decoration: none;
 }
 
@@ -172,7 +172,7 @@ form .field input[type="submit"] {
   padding-left: 0px;
   border: none;
   cursor: pointer;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(left, #b26b45, #d54c22);
 }
 
 @import "~bootstrap/scss/bootstrap";
